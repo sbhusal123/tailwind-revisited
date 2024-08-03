@@ -7,7 +7,8 @@
     "node": "18.20.4"
   },
   "scripts": {
-    "build-css": "tailwindcss build -i src/style.css -o public/style.css",
+    "build-css": "npx tailwindcss -i src/style.css -o public/style.css",
+    "build-css-watch": "npx tailwindcss -i src/style.css -o public/style.css --watch",
     "start": "bash start.bash"
   },
   "devDependencies": {
