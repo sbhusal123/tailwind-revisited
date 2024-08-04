@@ -12,7 +12,6 @@
     "start": "bash start.bash"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.7",
     "tailwindcss-cli": "^0.1.2"
   }
 }
