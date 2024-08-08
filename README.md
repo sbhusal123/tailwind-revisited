@@ -24,3 +24,6 @@ To enable intellisense in vscode: ``yarn tailwindcss init -p``
 **Development Packages:**
 
 > yarn add -D tailwindcss@latest postcss autoprefixer
+
+
+For all the images being used, credit goes to individual authors.

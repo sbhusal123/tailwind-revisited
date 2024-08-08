@@ -23,8 +23,8 @@
 |---------------------------------------------------------------------------|
 ```
 
-![Box Model Detail](./images/box-model-detail.svg)
+![Box Model Detail](./images/boxmodel/box-model-detail.svg)
 
-![Box Model](./images/css-box-model.jpg)
+![Box Model](./images/boxmodel/css-box-model.jpg)
 
 All credits goes to author.
