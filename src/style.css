@@ -1,11 +1,3 @@
-/* base */
 @tailwind base;
-/* base */
-
-/* components */
 @tailwind components;
-/* components */
-
-/* utilities */
 @tailwind utilities;
-/* utilities */

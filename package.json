@@ -7,11 +7,14 @@
     "node": "18.20.4"
   },
   "scripts": {
-    "build-css": "npx tailwindcss-cli -i src/style.css -o public/style.css",
-    "build-css-watch": "npx tailwindcss-cli -i src/style.css -o public/style.css --watch",
+    "build-css": "npx tailwindcss -i src/style.css -o public/style.css",
+    "build-css-watch": "npx tailwindcss -i src/style.css -o public/style.css --watch",
     "start": "bash start.bash"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.9",
     "tailwindcss-cli": "^0.1.2"
   }
 }
