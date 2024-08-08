@@ -2,7 +2,10 @@
 
 Node version: ``18.20.4``, node version managed with [asdf](https://asdf-vm.com/manage/commands.html)
 
-To enable intellisense in vscode: ````
+
+Tailwind version: ``v3.4.9``
+
+To enable intellisense in vscode: ``yarn tailwindcss init -p``
 
 **Packages to install globally:**
 
@@ -13,7 +16,11 @@ To enable intellisense in vscode: ````
 
 **Handy Commands:**
 
-- Build css: ``npx tailwindcss-cli -i src/style.css -o public/style.css``
+- Build css: ``npx tailwindcss -i src/style.css -o public/style.css``
 
-- Build css with watch: ``npx tailwindcss-cli -i src/style.css -o public/style.css --watch``
+- Build css with watch: ``npx tailwindcss -i src/style.css -o public/style.css --watch``
 
+
+**Development Packages:**
+
+> yarn add -D tailwindcss@latest postcss autoprefixer
