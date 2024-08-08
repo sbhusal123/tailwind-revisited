@@ -83,3 +83,47 @@ module.exports = {
   plugins: [],
 }
 ```
+
+**4. Adjusting Fonts:**
+
+`fontFamily` object key in config file is used to configure the fonts.
+
+> By default, it used sans font, fontFamily -> sans
+
+1. select the fonts from google fonts [here](https://fonts.google.com/)
+
+2. Use the imoprt section and copy the imports.
+
+3. Import the font url code and import it in base ``style.css``
+
+```css
+/* import over here */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* tailwind core */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+4. Now, extend the font settings over ``tailwind.config.js``
+
+```css
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./public/*.html"
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        /* font name can also be reffered from google font selection dashboard */
+        body: ["Nunito"]
+      }
+    },
+  },
+  plugins: [],
+}
+```
+
+> Rebuild the css script, usage: ``font-body``
