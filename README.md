@@ -27,3 +27,6 @@ To enable intellisense in vscode: ``yarn tailwindcss init -p``
 
 
 For all the images being used, credit goes to individual authors.
+
+
+Basic CSS simulator and code generator [here](https://www.cssportal.com/)
