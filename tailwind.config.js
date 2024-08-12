@@ -14,6 +14,13 @@ module.exports = {
       },
       fontFamily: {
         body: ["Nunito"]
+      },
+      screens: {
+        'mobile': {'max': '450px'},
+        'gt-mobile': {'min': '450px'}
+      },
+      fontSize: {
+        'xs': ['0.6rem']
       }
     },
   },
