@@ -23,4 +23,6 @@ We wanted to Align the text `Buy for 20$` at the top of the image in the above c
 
 > What this does is, positions the one div relative to another, yet the child position is absolute. 
 
-**Note that the positioning from top and bottom is controlled with top-strength left-strength bottom-strength.**
+**Note**
+- the positioning from top and bottom is controlled with top-strength left-strength bottom-strength. **
+- Margin, Padding is controlled with the similar class.
