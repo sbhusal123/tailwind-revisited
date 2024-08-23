@@ -14,10 +14,15 @@
             <nav>
                 <div>
                     <h1 class="font-bold uppercase p-4 border-b border-gray-100">
-                        <a href="/">Food Ninja</a>
+                        <a class="text-sm md:text-xl" href="/">Food Ninja</a>
                     </h1>
                 </div>
                 <ul>
+                    <li class="text-gray-700 font-bold">
+                        <a href="#">
+                            <span class="text-blue-600 max-sm:text-red-600">Test</span>
+                        </a>
+                    </li>
                     <li class="text-gray-700 font-bold">
                         <a href="#">
                             <span>Home</span>
@@ -37,10 +42,10 @@
             </nav>
         </div> <!-- end nav-->
 
-        <main class="px-16 py-6">
-            <div>
+        <main class="px-16 py-6 bg-gray-100">
+            <div class="flex justify-center md:justify-end">
                 <a href="#" class="text-primary">Log In</a>
-                <a href="#" class="text-primary">Sign Up</a>
+                <a href="#" class="text-primary ml-2">Sign Up</a>
             </div>
 
             <header>
@@ -53,11 +58,28 @@
 
                 <div class="mt-8">
                     <!-- cards go here -->
-                    <div>
-                        <img src="img/stew.jpg" alt="stew">
-                        <div>
+                    <div class="bg-white rounded overflow-hidden shadow-md relative">
+
+                         <!-- 
+                           - object cover to prevent discortion of image in various window size
+                           - with object cover, the image, stays in the same container zooming in an out
+                           - overflow hidden: rounded corners overflowed by image
+                         -->
+                        <img src="img/stew.jpg" alt="stew" class="w-full h-32 sm:h-48 object-cover">
+
+                        <!--
+                            instead of adding a padding, give a margin, to prevent padding of image 
+                        -->
+                        <div class="m-4">
                             <span>5 Bean Chilli Stew</span>
-                            <span>Recipe by Mario</span>
+
+                            <!-- by default span are not block, so they display in same  -->
+                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+
+                        </div>
+
+                        <div class="bg-secondary-100 text-secondary-200 text-sm uppercase font-bold rounded-full p-2 absolute top-1 ml-2 mt-2">
+                            <span>25 mins</span>
                         </div>
                     </div>
 
@@ -67,7 +89,7 @@
                         <!-- cards go here-->
                     </div>
 
-                    <div>
+                    <div class="flex justify-center">
                         <div class="bg-secondary-100 text-secondary-200">Load more</div>
                     </div>
                 </div>
